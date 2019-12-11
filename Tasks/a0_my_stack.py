@@ -36,7 +36,7 @@ def peek(ind: int = 0) -> Any:
 	:param ind: index of element (count from the top)
 	:return: peeked element
 	"""
-	b = stack[1-ind]
+	b = stack[-1 - ind]
 	return b
 
 
@@ -46,5 +46,4 @@ def clear() -> None:
 
 	:return: None
 	"""
-	c = stack.clear()
-	return c
+	stack.clear()
