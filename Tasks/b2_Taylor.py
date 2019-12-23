@@ -16,7 +16,7 @@ def ex(x: Union[int, float]) -> float:
 	for i in range(10):
 		taylor = (x ** i) / math.factorial(i) # можно для оптимизации домножать на результат предыдущего знаменателя...
 		result += taylor
-	print(x)
+
 	return result
 
 
@@ -32,5 +32,5 @@ def sinx(x: Union[int, float]) -> float:
 	for i in range(10):
 		taylor2 = ((-1) ** i) * (x ** (2 * i + 1)) / math.factorial(2 * i + 1)
 		result += taylor2
-	print(x)
+
 	return result
