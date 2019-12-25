@@ -5,7 +5,7 @@ import Tasks.d1_horse as horse
 class MyTestCase(unittest.TestCase):
 	def test_1(self):
 		self.assertEqual(1152, horse.calculate_paths((8, 8), (7, 7)),
-						 msg="Something gonna wrong...")
+						 msg="Something went wrong...")
 
 	def test_2(self):
 		self.assertEqual(4608, horse.calculate_paths((9, 9), (8, 8)),
