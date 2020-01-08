@@ -24,3 +24,4 @@ def binary_search(elem: Any, arr: Sequence) -> Optional[int]:
 
 
 
+
