@@ -11,15 +11,16 @@ def binary_search(elem: Any, arr: Sequence) -> Optional[int]:
 	"""
 	low = 0
 	high = len(arr) - 1
-	result = None
-	while low <= high:
+	while low < high:
 		mid = (low + high) // 2
-		if arr[mid] == elem:
-			result = mid
-			break
-		elif arr[mid] > elem:
-			high = mid - 1
-		elif arr[mid] < elem:
+		if elem > arr[mid]:
 			low = mid + 1
+		else:
+			high = mid
+	if arr[high] == elem:
+		return high
+	else:
+		return None
 
-	return result
+
+
