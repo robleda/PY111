@@ -21,6 +21,6 @@ def sort(container: Collection[_Tt]) -> Collection[_Tt]:
 		if not swapped:
 			break
 
-#pass
+
 
 	return container
